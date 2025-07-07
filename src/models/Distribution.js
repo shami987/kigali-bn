@@ -17,7 +17,6 @@ const distributionSchema = new mongoose.Schema({
     },
     userEmail: {
         type: String,
-        required: true,
         trim: true,
         lowercase: true,
         match: [/^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/, 'Please fill a valid email address']
