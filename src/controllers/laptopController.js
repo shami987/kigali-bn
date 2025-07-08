@@ -87,7 +87,7 @@ exports.distributeLaptop = async (req, res) => {
     req.body;
 
   // Basic validation
-  if (!laptopId || !userName || !userEmail || !userPosition) {
+  if (!laptopId || !userName || !userPosition) {
     return res
       .status(400)
       .json({
